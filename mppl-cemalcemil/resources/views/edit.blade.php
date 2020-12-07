@@ -33,7 +33,7 @@
     <div class="container d-flex">
       <div class="contact-info mr-auto">
         <i class="icofont-phone"></i> +62 81234567890&nbsp;&nbsp;
-        <span class="d-none d-lg-inline-block"><i class="icofont-location-pin"></i> Sukolilo, Surabaya</span>
+        <span class="d-none d-lg-inline-block"><i class="icofont-location-pin"></i>Gresik</span>
       </div>
     </div>
   </div>
@@ -48,7 +48,7 @@
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li class="book-a-table text-center"><a href="{{ route('home')}}">Back</a></li>
+          <li class="book-a-table text-center"><a href="{{ route('home')}}">kembali</a></li>
         </ul>
       </nav><!-- .nav-menu -->
 
@@ -62,7 +62,7 @@
         <div class="d-flex justify-content-center align-items-center mt-5">
           <div class="card">
             <div class="card-header">
-                <h3 class="text-center">Profile</h3>
+                <h3 class="text-center">Profil</h3>
             </div>
             <div class="card-body">
                 <form method="POST" action="{{ route('profile') }}">
@@ -70,7 +70,7 @@
                     @csrf
 
                     <div class="form-group row">
-                        <label for="name" class="col-md-4 col-form-label text-md-left">{{ __('Name') }}</label>
+                        <label for="name" class="col-md-4 col-form-label text-md-left">{{ __('Nama') }}</label>
 
                         <div class="col-md-12">
                             <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name', $user->name) }}" autocomplete="name" autofocus>
@@ -84,7 +84,7 @@
                     </div>
 
                     <div class="form-group row">
-                        <label for="email" class="col-md-4 col-form-label text-md-left">{{ __('Email') }}</label>
+                        <label for="email" class="col-md-4 col-form-label text-md-left">{{ __('E-mail') }}</label>
 
                         <div class="col-md-12">
                             <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email', $user->email) }}" autocomplete="email">
@@ -98,7 +98,7 @@
                     </div>
                     
                     <div class="form-group row">
-                      <label for="address" class="col-md-4 col-form-label text-md-left">{{ __('Address') }}</label>
+                      <label for="address" class="col-md-4 col-form-label text-md-left">{{ __('Alamat') }}</label>
 
                       <div class="col-md-12">
                           <input id="address" type="address" class="form-control @error('address') is-invalid @enderror" name="address" value="{{ old('address', $user->address) }}" autocomplete="email">
@@ -112,7 +112,7 @@
                     </div>
 
                     <div class="form-group row">
-                      <label for="phonenumber" class="col-md-4 col-form-label text-md-left">{{ __('Phone') }}</label>
+                      <label for="phonenumber" class="col-md-4 col-form-label text-md-left">{{ __('No HP') }}</label>
 
                       <div class="col-md-12">
                           <input id="phonenumber" type="phonenumber" class="form-control @error('phonenumber') is-invalid @enderror" name="phonenumber" value="{{ old('phonenumber', $user->phonenumber) }}" autocomplete="email">
@@ -126,7 +126,7 @@
                     </div>
                     
                     <div class="form-group row">
-                      <label for="gender" class="col-md-4 col-form-label text-md-left">{{ __('Gender') }}</label>
+                      <label for="gender" class="col-md-4 col-form-label text-md-left">{{ __('Jenis Kelamin') }}</label>
 
                       <div class="col-md-12">
                           <input id="gender" type="gender" class="form-control @error('gender') is-invalid @enderror" name="gender" value="{{ old('gender', $user->gender) }}" autocomplete="email">

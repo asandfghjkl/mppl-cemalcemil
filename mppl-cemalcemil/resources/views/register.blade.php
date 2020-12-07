@@ -33,7 +33,7 @@
     <div class="container d-flex">
       <div class="contact-info mr-auto">
         <i class="icofont-phone"></i> +62 81234567890&nbsp;&nbsp;
-        <span class="d-none d-lg-inline-block"><i class="icofont-location-pin"></i> Sukolilo, Surabaya</span>
+        <span class="d-none d-lg-inline-block"><i class="icofont-location-pin"></i> Gresik</span>
       </div>
     </div>
   </div>
@@ -74,23 +74,23 @@
                     </div>
                 @endif
                 <div class="form-group">
-                    <label for=""><strong>Name</strong></label>
+                    <label for=""><strong>Nama</strong></label>
                     <input type="text" name="name" class="form-control" placeholder="Name">
                 </div>
                 <div class="form-group">
-                    <label for=""><strong>Email</strong></label>
+                    <label for=""><strong>E-mail</strong></label>
                     <input type="text" name="email" class="form-control" placeholder="Email">
                 </div>
                 <div class="form-group">
-                  <label for=""><strong>Address</strong></label>
+                  <label for=""><strong>Alamat</strong></label>
                   <input type="text" name="address" class="form-control" placeholder="Address">
                 </div>
                 <div class="form-group">
-                  <label for=""><strong>Phone Number</strong></label>
+                  <label for=""><strong>No HP</strong></label>
                   <input type="text" name="phonenumber" class="form-control" placeholder="Phone Number">
                 </div>
                 <div class="form-group">
-                  <label for=""><strong>Gender</strong></label>
+                  <label for=""><strong>Jenis Kelamin</strong></label>
                   <input type="text" name="gender" class="form-control" placeholder="Gender">
                 </div>
                 <div class="form-group">
@@ -98,13 +98,13 @@
                     <input type="password" name="password" class="form-control" placeholder="Password">
                 </div>
                 <div class="form-group">
-                    <label for=""><strong>Confirm Password</strong></label>
+                    <label for=""><strong>Konfirmasi Password</strong></label>
                     <input type="password" name="password_confirmation" class="form-control" placeholder="Password">
                 </div>
             </div>
             <div class="card-footer">
                 <button type="submit" class="btn btn-outline-light btn-block">Register</button>
-                <p class="text-center">Already have account? <a href="{{ route('login') }}" style="color: black">Login</a> now!</p>
+                <p class="text-center">Sudah punya akun? <a href="{{ route('login') }}" style="color: black">Login</a> sekarang!</p>
             </div>
             </form>
           </div>

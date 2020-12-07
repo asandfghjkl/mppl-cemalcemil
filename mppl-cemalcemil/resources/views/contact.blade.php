@@ -33,7 +33,7 @@
     <div class="container d-flex">
       <div class="contact-info mr-auto">
         <i class="icofont-phone"></i> +62 81234567890&nbsp;&nbsp;
-        <span class="d-none d-lg-inline-block"><i class="icofont-location-pin"></i> Sukolilo, Surabaya</span>
+        <span class="d-none d-lg-inline-block"><i class="icofont-location-pin"></i>Gresik</span>
       </div>
     </div>
   </div>
@@ -48,7 +48,7 @@
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li class="book-a-table text-center"><a href="{{ route('home')}}">Back</a></li>
+          <li class="book-a-table text-center"><a href="{{ route('home')}}">kembali</a></li>
         </ul>
       </nav><!-- .nav-menu -->
 
@@ -61,8 +61,8 @@
     <div class="container" data-aos="fade-up">
       <div class="section-title">
         <h3><br><br></h3>
-        <h2>Contact</h2>
-        <p>Contact Us</p>
+        <h2>Kontak</h2>
+        <p>Kontak kami</p>
       </div>
     </div>
     <div class="container" data-aos="fade-up">
@@ -71,22 +71,22 @@
           <div class="info">
             <div class="open-hours">
               <i class="icofont-clock-time icofont-rotate-90"></i>
-              <h4>Open Hours:</h4>
+              <h4>Jam buka:</h4>
               <p>
-                Monday-Saturday:<br>
-                11:00 AM - 22:00 PM
+                Senin-Sabtu:<br>
+                11:00 - 22:00
               </p>
             </div>
 
             <div class="email">
               <i class="icofont-envelope"></i>
-              <h4>Email:</h4>
+              <h4>E-mail:</h4>
               <p>cemalcemil@gmail.com</p>
             </div>
 
             <div class="phone">
               <i class="icofont-phone"></i>
-              <h4>Call:</h4>
+              <h4>Telepon:</h4>
               <p>+62 81234567890</p>
             </div>
 
@@ -106,23 +106,23 @@
             @csrf
             <div class="form-row">
               <div class="col-md-6 form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <input type="text" name="name" class="form-control" id="name" placeholder="Nama" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                 <div class="validate"></div>
               </div>
               <div class="col-md-6 form-group">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                <input type="email" class="form-control" name="email" id="email" placeholder="E-mail" data-rule="email" data-msg="Please enter a valid email" />
                 <div class="validate"></div>
               </div>
             </div>
             <div class="form-group">
-              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Judul" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
               <div class="validate"></div>
             </div>
             <div class="form-group">
-              <textarea class="form-control" name="message" rows="8" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+              <textarea class="form-control" name="message" rows="8" data-rule="required" data-msg="Tulis pesan untuk kami" placeholder="Pesan"></textarea>
               <div class="validate"></div>
             </div>
-            <input type="submit" name="send" value="Submit" class="btn btn-dark btn-block">
+            <input type="submit" name="send" value="Kirim" class="btn btn-dark btn-block">
           </form>
 
         </div>

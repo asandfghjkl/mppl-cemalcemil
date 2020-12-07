@@ -32,7 +32,7 @@
     <div class="container d-flex">
       <div class="contact-info mr-auto">
         <i class="icofont-phone"></i> +62 81234567890&nbsp;&nbsp;
-        <span class="d-none d-lg-inline-block"><i class="icofont-location-pin"></i> Sukolilo, Surabaya</span>
+        <span class="d-none d-lg-inline-block"><i class="icofont-location-pin"></i> Gresik</span>
       </div>
     </div>
   </div>
@@ -75,8 +75,8 @@
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="menu-flters">
               <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-starters">Starters</li>
-              <li data-filter=".filter-salads">Salads</li>
+              <li data-filter=".filter-sweet">Sweet</li>
+              <li data-filter=".filter-savory">Savory</li>
               <li data-filter=".filter-specialty">Specialty</li>
             </ul>
           </div>
@@ -84,156 +84,93 @@
 
         <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
 
-          <div class="col-lg-6 menu-item filter-starters">
-            <img src="assets/img/menu/lobster-bisque.jpg" class="menu-img" alt="">
+          <div class="col-lg-6 menu-item filter-sweet">
+            <img src="assets/img/menu/bola-coklat.png" class="menu-img" alt="">
             <div class="menu-content">
-              <a href="#">Lobster Bisque</a><span>$5.95</span>
+              <a href="#">Bola-bola Coklat</a><span>Rp10.000,00</span>
             </div>
             <div class="menu-ingredients">
               Lorem, deren, trataro, filede, nerada
             </div>
           </div>
 
-          <div class="col-lg-6 menu-item filter-starters">
+          <div class="col-lg-6 menu-item filter-sweet">
             <button type="button" class="btn btn-secondary" onClick="onClick()">+</button>
             <input type="hidden" id="quantity" name="quantity" value="1" min="1" max="100"  />
             <button type="button" class="btn btn-secondary" onClick="onClickk()">-</button>
           </div>
 
-          <div class="col-lg-6 menu-item filter-specialty">
-            <img src="assets/img/menu/bread-barrel.jpg" class="menu-img" alt="">
+          <div class="col-lg-6 menu-item filter-sweet">
+            <img src="assets/img/menu/choco-cookies.png" class="menu-img" alt="">
             <div class="menu-content">
-              <a href="#">Bread Barrel</a><span>$6.95</span>
+              <a href="#">Choco Cookies</a><span>Rp8.000,00</span>
             </div>
             <div class="menu-ingredients">
               Lorem, deren, trataro, filede, nerada
             </div>
           </div>
 
-          <div class="col-lg-6 menu-item filter-specialty">
+          <div class="col-lg-6 menu-item filter-sweet">
             <button type="button" class="btn btn-secondary" onClick="onClick()">+</button>
             <input type="hidden" id="quantity" name="quantity" value="1" min="1" max="100"  />
             <button type="button" class="btn btn-secondary" onClick="onClickk()">-</button>
           </div>
 
-          <div class="col-lg-6 menu-item filter-starters">
-            <img src="assets/img/menu/cake.jpg" class="menu-img" alt="">
+          <div class="col-lg-6 menu-item filter-savory">
+            <img src="assets/img/menu/mie-crispy.png" class="menu-img" alt="">
             <div class="menu-content">
-              <a href="#">Crab Cake</a><span>$7.95</span>
+              <a href="#">Mie Crispy</a><span>Rp8.000,00</span>
             </div>
             <div class="menu-ingredients">
               A delicate crab cake served on a toasted roll with lettuce and tartar sauce
             </div>
           </div>
 
-          <div class="col-lg-6 menu-item filter-starters">
+
+          <div class="col-lg-6 menu-item filter-savory">
             <button type="button" class="btn btn-secondary" onClick="onClick()">+</button>
             <input type="hidden" id="quantity" name="quantity" value="1" min="1" max="100"  />
             <button type="button" class="btn btn-secondary" onClick="onClickk()">-</button>
           </div>
 
-          <div class="col-lg-6 menu-item filter-salads">
-            <img src="assets/img/menu/caesar.jpg" class="menu-img" alt="">
+          <div class="col-lg-6 menu-item filter-sweet">
+            <img src="assets/img/menu/cupcake.jpg" class="menu-img" alt="">
             <div class="menu-content">
-              <a href="#">Caesar Selections</a><span>$8.95</span>
-            </div>
-            <div class="menu-ingredients">
-              Lorem, deren, trataro, filede, nerada
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-salads">
-            <button type="button" class="btn btn-secondary" onClick="onClick()">+</button>
-            <input type="hidden" id="quantity" name="quantity" value="1" min="1" max="100"  />
-            <button type="button" class="btn btn-secondary" onClick="onClickk()">-</button>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-specialty">
-            <img src="assets/img/menu/tuscan-grilled.jpg" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#">Tuscan Grilled</a><span>$9.95</span>
+              <a href="#">Cupcake Dengan Topping</a><span>Rp10.000,00</span>
             </div>
             <div class="menu-ingredients">
               Grilled chicken with provolone, artichoke hearts, and roasted red pesto
             </div>
           </div>
-
-          <div class="col-lg-6 menu-item filter-specialty">
+          
+          <div class="col-lg-6 menu-item filter-sweet">
             <button type="button" class="btn btn-secondary" onClick="onClick()">+</button>
             <input type="hidden" id="quantity" name="quantity" value="1" min="1" max="100"  />
             <button type="button" class="btn btn-secondary" onClick="onClickk()">-</button>
           </div>
 
-          <div class="col-lg-6 menu-item filter-starters">
-            <img src="assets/img/menu/mozzarella.jpg" class="menu-img" alt="">
+          <div class="col-lg-6 menu-item filter-specialty">
+            <img src="assets/img/menu/mix.png" class="menu-img" alt="">
             <div class="menu-content">
-              <a href="#">Mozzarella Stick</a><span>$4.95</span>
+              <a href="#">Mix Box 4 in 1</a><span>Rp33.000,00</span>
             </div>
             <div class="menu-ingredients">
               Lorem, deren, trataro, filede, nerada
             </div>
           </div>
-
-          <div class="col-lg-6 menu-item filter-starters">
-            <button type="button" class="btn btn-secondary" onClick="onClick()">+</button>
-            <input type="hidden" id="quantity" name="quantity" value="1" min="1" max="100"  />
-            <button type="button" class="btn btn-secondary" onClick="onClickk()">-</button>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-salads">
-            <img src="assets/img/menu/greek-salad.jpg" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#">Greek Salad</a><span>$9.95</span>
-            </div>
-            <div class="menu-ingredients">
-              Fresh spinach, crisp romaine, tomatoes, and Greek olives
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-salads">
-            <button type="button" class="btn btn-secondary" onClick="onClick()">+</button>
-            <input type="hidden" id="quantity" name="quantity" value="1" min="1" max="100"  />
-            <button type="button" class="btn btn-secondary" onClick="onClickk()">-</button>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-salads">
-            <img src="assets/img/menu/spinach-salad.jpg" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#">Spinach Salad</a><span>$9.95</span>
-            </div>
-            <div class="menu-ingredients">
-              Fresh spinach with mushrooms, hard boiled egg, and warm bacon vinaigrette
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-salads">
-            <button type="button" class="btn btn-secondary" onClick="onClick()">+</button>
-            <input type="hidden" id="quantity" name="quantity" value="1" min="1" max="100"  />
-            <button type="button" class="btn btn-secondary" onClick="onClickk()">-</button>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-specialty">
-            <img src="assets/img/menu/lobster-roll.jpg" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#">Lobster Roll</a><span>$12.95</span>
-            </div>
-            <div class="menu-ingredients">
-              Plump lobster meat, mayo and crisp lettuce on a toasted bulky roll
-            </div>
-          </div>
-
+          
           <div class="col-lg-6 menu-item filter-specialty">
             <button type="button" class="btn btn-secondary" onClick="onClick()">+</button>
             <input type="hidden" id="quantity" name="quantity" value="1" min="1" max="100"  />
             <button type="button" class="btn btn-secondary" onClick="onClickk()">-</button>
           </div>
 
-          <div class="col-lg-6 menu-item filter-starters filter-salads filter-specialty">
+          <div class="col-lg-6 menu-item filter-sweet filter-savory filter-specialty">
             <div class="menu-content">
             </div>
           </div>
 
-          <div class="col-lg-6 menu-item filter-starters filter-salads filter-specialty">
+          <div class="col-lg-6 menu-item filter-sweet filter-savory filter-specialty">
             <p>Total Order: <a id="clicks">0</a></p>
           </div>
         </div>
@@ -241,7 +178,7 @@
         <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
           <div class="col-md-12 text-center">        
             <a href=#>
-            <button type="submit order" class="btn btn-warning">SUBMIT ORDER</button> </a>
+            <button type="submit order" class="btn btn-warning">PESAN</button> </a>
           </div>
         </div>
       </div>

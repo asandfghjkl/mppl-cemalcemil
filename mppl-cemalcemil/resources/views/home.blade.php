@@ -32,7 +32,7 @@
     <div class="container d-flex">
       <div class="contact-info mr-auto">
         <i class="icofont-phone"></i> +62 81234567890&nbsp;&nbsp;
-        <span class="d-none d-lg-inline-block"><i class="icofont-location-pin"></i> Sukolilo, Surabaya</span>
+        <span class="d-none d-lg-inline-block"><i class="icofont-location-pin"></i> Gresik</span>
       </div>
     </div>
   </div>
@@ -48,12 +48,11 @@
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li class="active"><a href="{{ route('home')}}">Dashboard</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#why-us">Why Us?</a></li>
-          <li><a href="#menu">Menu</a></li>
+          <li><a href="#about">Tentang kami</a></li>
+          <li><a href="#menu">Produk</a></li>
           <li><a href="#testimonials">Testimonials</a></li>
-          <li><a href="{{ route('contact.store')}}">Contact</a></li>
-          <li class="book-a-table text-center"><a href="{{ route('order.index')}}">Order Now</a></li>
+          <li><a href="{{ route('contact.store')}}">Kontak</a></li>
+          <li class="book-a-table text-center"><a href="{{ route('order.index')}}">Pesan Sekarang</a></li>
           <li class="dropdown">
             <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 {{ Auth::user()->name }}</span>
@@ -77,11 +76,11 @@
       <div class="row">
         <div class="col-lg-8">
           <h1>Welcome to <span>Cemal-Cemil</span></h1>
-          <h2>Offering great snacks for more than 4 years!</h2>
+          <h2>Penuhi kebutuhan cemilanmu!</h2>
 
           <div class="btns">
-            <a href="#menu" class="btn-menu animated fadeInUp scrollto">Our Menu</a>
-            <a href="{{ route('order.index')}}" class="btn-book animated fadeInUp scrollto">Order Now</a>
+            <a href="#menu" class="btn-menu animated fadeInUp scrollto">Produk Kami</a>
+            <a href="{{ route('order.index')}}" class="btn-book animated fadeInUp scrollto">Pesan Sekarang</a>
           </div>
         </div>
       </div>
@@ -101,13 +100,16 @@
             </div>
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
-            <h3>Cemal-Cemil is a snack bar that provide healthy snacks and a few light meals at relatively inexpensive prices. </h3>
+            <h3>Cemal-cemil merupakan perusahaan start-up di bidang makanan khususnya cemilan.</h3>
             <p class="font-italic">
               <br>
-              Located in Sukolilo, Surabaya, our place has been here since 2016.<br>
-              From a humble beginning of short orders, 
-              our focus is still to bring the best and most responsibly sourced ingredients to the table.<br>
-              All these years and successes later, we never forget where we came from. 
+              Perusahaan Cemal-Cemil yang dibangun sejak 2019 oleh Nur Rifqi Indarrahmaani Zulfa dan tim.
+              Berlokasi di Gresik, perusahaan kami memiliki visi  untuk memberikan terobosan baru dan pengalaman inovatif
+              nyemil dengan citra positif di mata konsumen, serta mengutamakan
+              pelayanan dan kualitas. Serta Misi kami untuk memahami keinginan
+              konsumen dan inovasi setiap saat.<br>
+              Dari yang awalnya berdiri karena semata memenuhi tugas kuliah, kami mendapatkan respon positif dari pelanggan,
+              sehingga disinilah perusahaan Cemal-Cemil ini sekarang.
             </p>
           </div>
         </div>
@@ -115,64 +117,21 @@
       </div>
     </section><!-- End About Section -->
 
-    <!-- ======= Why Us Section ======= -->
-    <section id="why-us" class="why-us">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Why Us</h2>
-          <p>Why Choose Cemal-Cemil</p>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-4">
-            <div class="box" data-aos="zoom-in" data-aos-delay="100">
-              <span>01</span>
-              <h4>100% Home Made</h4>
-              <p>Every dish at Charntra is made onsite from scratch. 
-                y creating everything from the start, 
-                we have 100% control over the ingredients used, the quality and the freshness of the dish. You will taste the difference.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mt-4 mt-lg-0">
-            <div class="box" data-aos="zoom-in" data-aos-delay="200">
-              <span>02</span>
-              <h4>Superior Value</h4>
-              <p>You will receive a fresh 100% home  made meals in a portion size that won’t leave you scrapping your plate.<br><br><br><br></p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mt-4 mt-lg-0">
-            <div class="box" data-aos="zoom-in" data-aos-delay="300">
-              <span>03</span>
-              <h4> Cozy Place</h4>
-              <p>Cemal-Cemil is an ideal place for Celebrations , Corporate Lunches / Dinners or just a casual meal with family and friends.<br><br><br></p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Why Us Section -->
-
     <!-- ======= Menu Section ======= -->
     <section id="menu" class="menu section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Menu</h2>
-          <p>Check Our Tasty Menu</p>
+          <h2>Produk Kami</h2>
+          <p>Cek produk yang kami tawarkan</p>
         </div>
 
         <div class="row" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="menu-flters">
               <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-starters">Starters</li>
-              <li data-filter=".filter-salads">Salads</li>
+              <li data-filter=".filter-sweet">Sweet</li>
+              <li data-filter=".filter-savory">Savory</li>
               <li data-filter=".filter-specialty">Specialty</li>
             </ul>
           </div>
@@ -180,93 +139,53 @@
 
         <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
 
-          <div class="col-lg-6 menu-item filter-starters">
-            <img src="assets/img/menu/lobster-bisque.jpg" class="menu-img" alt="">
+          <div class="col-lg-6 menu-item filter-sweet">
+            <img src="assets/img/menu/bola-coklat.png" class="menu-img" alt="">
             <div class="menu-content">
-              <a href="#">Lobster Bisque</a><span>$5.95</span>
+              <a href="#">Bola-bola Coklat</a><span>Rp10.000,00</span>
             </div>
             <div class="menu-ingredients">
               Lorem, deren, trataro, filede, nerada
             </div>
           </div>
 
-          <div class="col-lg-6 menu-item filter-specialty">
-            <img src="assets/img/menu/bread-barrel.jpg" class="menu-img" alt="">
+          <div class="col-lg-6 menu-item filter-sweet">
+            <img src="assets/img/menu/choco-cookies.png" class="menu-img" alt="">
             <div class="menu-content">
-              <a href="#">Bread Barrel</a><span>$6.95</span>
+              <a href="#">Choco Cookies</a><span>Rp8.000,00</span>
             </div>
             <div class="menu-ingredients">
               Lorem, deren, trataro, filede, nerada
             </div>
           </div>
 
-          <div class="col-lg-6 menu-item filter-starters">
-            <img src="assets/img/menu/cake.jpg" class="menu-img" alt="">
+          <div class="col-lg-6 menu-item filter-savory">
+            <img src="assets/img/menu/mie-crispy.png" class="menu-img" alt="">
             <div class="menu-content">
-              <a href="#">Crab Cake</a><span>$7.95</span>
+              <a href="#">Mie Crispy</a><span>Rp8.000,00</span>
             </div>
             <div class="menu-ingredients">
               A delicate crab cake served on a toasted roll with lettuce and tartar sauce
             </div>
           </div>
 
-          <div class="col-lg-6 menu-item filter-salads">
-            <img src="assets/img/menu/caesar.jpg" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#">Caesar Selections</a><span>$8.95</span>
-            </div>
-            <div class="menu-ingredients">
-              Lorem, deren, trataro, filede, nerada
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-specialty">
+          <div class="col-lg-6 menu-item filter-sweet">
             <img src="assets/img/menu/tuscan-grilled.jpg" class="menu-img" alt="">
             <div class="menu-content">
-              <a href="#">Tuscan Grilled</a><span>$9.95</span>
+              <a href="#">Cupcake Dengan Topping</a><span>Rp10.000,00</span>
             </div>
             <div class="menu-ingredients">
               Grilled chicken with provolone, artichoke hearts, and roasted red pesto
             </div>
           </div>
-
-          <div class="col-lg-6 menu-item filter-starters">
-            <img src="assets/img/menu/mozzarella.jpg" class="menu-img" alt="">
+          
+          <div class="col-lg-6 menu-item filter-specialty">
+            <img src="assets/img/menu/mix.png" class="menu-img" alt="">
             <div class="menu-content">
-              <a href="#">Mozzarella Stick</a><span>$4.95</span>
+              <a href="#">Mix Box 4 in 1</a><span>Rp33.000,00</span>
             </div>
             <div class="menu-ingredients">
               Lorem, deren, trataro, filede, nerada
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-salads">
-            <img src="assets/img/menu/greek-salad.jpg" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#">Greek Salad</a><span>$9.95</span>
-            </div>
-            <div class="menu-ingredients">
-              Fresh spinach, crisp romaine, tomatoes, and Greek olives
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-salads">
-            <img src="assets/img/menu/spinach-salad.jpg" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#">Spinach Salad</a><span>$9.95</span>
-            </div>
-            <div class="menu-ingredients">
-              Fresh spinach with mushrooms, hard boiled egg, and warm bacon vinaigrette
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-specialty">
-            <img src="assets/img/menu/lobster-roll.jpg" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#">Lobster Roll</a><span>$12.95</span>
-            </div>
-            <div class="menu-ingredients">
-              Plump lobster meat, mayo and crisp lettuce on a toasted bulky roll
             </div>
           </div>
 

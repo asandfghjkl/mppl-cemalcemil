@@ -33,7 +33,7 @@
     <div class="container d-flex">
       <div class="contact-info mr-auto">
         <i class="icofont-phone"></i> +62 81234567890&nbsp;&nbsp;
-        <span class="d-none d-lg-inline-block"><i class="icofont-location-pin"></i> Sukolilo, Surabaya</span>
+        <span class="d-none d-lg-inline-block"><i class="icofont-location-pin"></i> Gresik</span>
       </div>
     </div>
   </div>
@@ -43,7 +43,6 @@
     <div class="container d-flex align-items-center">
 
       <h1 class="logo mr-auto"><a href="{{ route('home')}}">Cemal-Cemil</a></h1
-
     </div>
   </header><!-- End Header -->
 
@@ -82,7 +81,7 @@
                   </div>
               @endif
               <div class="form-group">
-                  <label for=""><strong>Email</strong></label>
+                  <label for=""><strong>E-mail</strong></label>
                   <input type="text" name="email" class="form-control" placeholder="Email">
               </div>
               <div class="form-group">
@@ -92,7 +91,7 @@
           </div>
           <div class="card-footer">
               <button type="submit" class="btn btn-outline-light btn-block">Log In</button>
-              <p class="text-center">Havent had an account? <a href="{{ route('register') }}" style="color: black">Register</a> now!</p>
+              <p class="text-center">Belum memiliki akun? <a href="{{ route('register') }}" style="color: black">Register</a> sekarang!</p>
           </div>
           </form>
           </div>

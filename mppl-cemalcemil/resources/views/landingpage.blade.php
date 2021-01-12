@@ -144,9 +144,7 @@
             <div class="menu-content">
               <a href="#">Bola-bola Coklat</a><span>Rp10.000,00</span>
             </div>
-            <div class="menu-ingredients">
-              Lorem, deren, trataro, filede, nerada
-            </div>
+            
           </div>
 
           <div class="col-lg-6 menu-item filter-sweet">
@@ -154,9 +152,7 @@
             <div class="menu-content">
               <a href="#">Choco Cookies</a><span>Rp8.000,00</span>
             </div>
-            <div class="menu-ingredients">
-              Lorem, deren, trataro, filede, nerada
-            </div>
+            
           </div>
 
           <div class="col-lg-6 menu-item filter-savory">
@@ -164,9 +160,7 @@
             <div class="menu-content">
               <a href="#">Mie Crispy</a><span>Rp8.000,00</span>
             </div>
-            <div class="menu-ingredients">
-              A delicate crab cake served on a toasted roll with lettuce and tartar sauce
-            </div>
+            
           </div>
 
           <div class="col-lg-6 menu-item filter-sweet">
@@ -174,9 +168,7 @@
             <div class="menu-content">
               <a href="#">Cupcake Dengan Topping</a><span>Rp10.000,00</span>
             </div>
-            <div class="menu-ingredients">
-              Grilled chicken with provolone, artichoke hearts, and roasted red pesto
-            </div>
+            
           </div>
           
           <div class="col-lg-6 menu-item filter-specialty">
@@ -184,9 +176,7 @@
             <div class="menu-content">
               <a href="#">Mix Box 4 in 1</a><span>Rp33.000,00</span>
             </div>
-            <div class="menu-ingredients">
-              Lorem, deren, trataro, filede, nerada
-            </div>
+            
           </div>
 
         </div>

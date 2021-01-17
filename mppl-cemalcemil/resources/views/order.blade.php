@@ -69,7 +69,7 @@
 
   <main id="main">
   <section id="menu" class="menu section-bg">
-      <div class="container" data-aos="fade-up">
+    <div class="container" data-aos="fade-up">
         <h3><br><br></h3>
         <div class="row" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-12 d-flex justify-content-center">
@@ -82,6 +82,15 @@
           </div>
         </div>
         
+        <!-- Success message -->
+        @if(Session::has('success'))
+        <div class="alert alert-success">
+            {{Session::get('success')}}
+        </div>
+      @endif
+
+      <form action="" method="post" action="{{ route('order.store') }}">
+      @csrf
         <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
 
           <div class="col-lg-6 menu-item filter-sweet">
@@ -89,14 +98,11 @@
             <div class="menu-content">
               <a href="#">Bola-bola Coklat</a><span>Rp10.000,00</span>
             </div>
-            <div class="menu-ingredients">
-              Lorem, deren, trataro, filede, nerada
-            </div>
           </div>
 
           <div class="col-lg-6 menu-item filter-sweet">
             <div class="col-md-6 form-group">
-              <input type="text" class="form-control" name="bolabola" id="bolabola" placeholder="Jumlah" data-rule="email" data-msg="Please enter a valid email" />
+              <input type="text" class="form-control" name="bolabolacoklat" id="bolabolacoklat" placeholder="Jumlah" data-rule="between:1,10" data-msg="masukkan jumlah yang sesuai, minimal = 1 / maksimal 10" />
               <div class="validate"></div>
             </div>
 
@@ -107,14 +113,11 @@
             <div class="menu-content">
               <a href="#">Choco Cookies</a><span>Rp8.000,00</span>
             </div>
-            <div class="menu-ingredients">
-              Lorem, deren, trataro, filede, nerada
-            </div>
           </div>
 
           <div class="col-lg-6 menu-item filter-sweet">
             <div class="col-md-6 form-group">
-              <input type="text" class="form-control" name="cookies" id="cookies" placeholder="Jumlah" data-rule="email" data-msg="Please enter a valid email" />
+              <input type="text" class="form-control" name="chococookies" id="chococookies" placeholder="Jumlah"data-rule="between:1,10" data-msg="masukkan jumlah yang sesuai, minimal = 1 / maksimal 10" />
               <div class="validate"></div>
             </div>
 
@@ -125,15 +128,12 @@
             <div class="menu-content">
               <a href="#">Mie Crispy</a><span>Rp8.000,00</span>
             </div>
-            <div class="menu-ingredients">
-              A delicate crab cake served on a toasted roll with lettuce and tartar sauce
-            </div>
           </div>
 
 
           <div class="col-lg-6 menu-item filter-savory">
             <div class="col-md-6 form-group">
-              <input type="text" class="form-control" name="mie" id="mie" placeholder="Jumlah" data-rule="email" data-msg="Please enter a valid email" />
+              <input type="text" class="form-control" name="miecrispy" id="miecrispy" placeholder="Jumlah" data-rule="between:1,10" data-msg="masukkan jumlah yang sesuai, minimal = 1 / maksimal 10" />
               <div class="validate"></div>
             </div>
 
@@ -144,14 +144,11 @@
             <div class="menu-content">
               <a href="#">Cupcake Dengan Topping</a><span>Rp10.000,00</span>
             </div>
-            <div class="menu-ingredients">
-              Grilled chicken with provolone, artichoke hearts, and roasted red pesto
-            </div>
           </div>
           
           <div class="col-lg-6 menu-item filter-sweet">
             <div class="col-md-6 form-group">
-              <input type="text" class="form-control" name="cupcake" id="cupcake" placeholder="Jumlah" data-rule="email" data-msg="Please enter a valid email" />
+              <input type="text" class="form-control" name="cupcaketopping" id="cupcaketopping" placeholder="Jumlah" data-rule="between:1,10" data-msg="masukkan jumlah yang sesuai, minimal = 1 / maksimal 10" />
               <div class="validate"></div>
             </div>
 
@@ -162,14 +159,11 @@
             <div class="menu-content">
               <a href="#">Mix Box 4 in 1</a><span>Rp33.000,00</span>
             </div>
-            <div class="menu-ingredients">
-              Lorem, deren, trataro, filede, nerada
-            </div>
           </div>
           
           <div class="col-lg-6 menu-item filter-specialty">
             <div class="col-md-6 form-group">
-              <input type="text" name="mixbox" class="form-control" id="mixbox" placeholder="Jumlah" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+              <input type="text" class="form-control" name="mixbox4in1" id="mixbox4in1" placeholder="Jumlah" data-rule="between:1,10" data-msg="masukkan jumlah yang sesuai, minimal = 1 / maksimal 10" />
               <div class="validate"></div>
             </div>
 
@@ -184,47 +178,16 @@
           </div>
         </div>
 
-        {{-- <div class="col-lg-8 mt-5 mt-lg-0">
-          <!-- Success message -->
-          @if(Session::has('success'))
-            <div class="alert alert-success">
-                {{Session::get('success')}}
-            </div>
-          @endif
+        <input type="submit" name="send" value="Pesan" class="btn btn-dark btn-block">
+      </form>
 
-          <form action="" method="post" action="{{ route('contact.store') }}">
-          @csrf
-          <div class="form-row">
-            <div class="col-md-6 form-group">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Nama" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-              <div class="validate"></div>
-            </div>
-            <div class="col-md-6 form-group">
-              <input type="email" class="form-control" name="email" id="email" placeholder="E-mail" data-rule="email" data-msg="Please enter a valid email" />
-              <div class="validate"></div>
-            </div>
-          </div>
-          <div class="form-group">
-            <input type="text" class="form-control" name="subject" id="subject" placeholder="Judul" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-            <div class="validate"></div>
-          </div>
-          <div class="form-group">
-            <textarea class="form-control" name="message" rows="8" data-rule="required" data-msg="Tulis pesan untuk kami" placeholder="Pesan"></textarea>
-            <div class="validate"></div>
-          </div>
-          <input type="submit" name="send" value="Kirim" class="btn btn-dark btn-block">
-        </form>
-
-      </div> --}}
-
-    </div>
-
-        <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
+        {{-- <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
           <div class="col-md-12 text-center">        
             <a href=#>
               <input type="submit" name="send" value="Pesan" class="btn btn-dark btn-block">
           </div>
-        </div>
+        </div> --}}
+
       </div>
     </section>
 

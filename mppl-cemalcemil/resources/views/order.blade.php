@@ -144,9 +144,14 @@
           </div>
           
           <div class="col-lg-6 menu-item filter-sweet">
-            <button type="button" class="btn btn-secondary" onClick="onClick()">+</button>
-            <input type="hidden" id="quantity" name="quantity" value="1" min="1" max="100"  />
-            <button type="button" class="btn btn-secondary" onClick="onClickk()">-</button>
+            {{-- <form action="" method="post" action="{{ route('contact.store') }}">
+              @csrf
+              <div class="form-row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Jumlah" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validate"></div>
+                </div>
+            </form> --}}
           </div>
 
           <div class="col-lg-6 menu-item filter-specialty">
@@ -160,9 +165,14 @@
           </div>
           
           <div class="col-lg-6 menu-item filter-specialty">
-            <button type="button" class="btn btn-secondary" onClick="onClick()">+</button>
-            <input type="hidden" id="quantity" name="quantity" value="1" min="1" max="100"  />
-            <button type="button" class="btn btn-secondary" onClick="onClickk()">-</button>
+            <form action="" method="post" action="{{ route('contact.store') }}">
+              @csrf
+              <div class="form-row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Jumlah" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validate"></div>
+                </div>
+            </form>
           </div>
 
           <div class="col-lg-6 menu-item filter-sweet filter-savory filter-specialty">

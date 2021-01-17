@@ -81,7 +81,7 @@
             </ul>
           </div>
         </div>
-
+        
         <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
 
           <div class="col-lg-6 menu-item filter-sweet">
@@ -95,9 +95,11 @@
           </div>
 
           <div class="col-lg-6 menu-item filter-sweet">
-            <button type="button" class="btn btn-secondary" onClick="onClick()">+</button>
-            <input type="hidden" id="quantity" name="quantity" value="1" min="1" max="100"  />
-            <button type="button" class="btn btn-secondary" onClick="onClickk()">-</button>
+            <div class="col-md-6 form-group">
+              <input type="text" class="form-control" name="bolabola" id="bolabola" placeholder="Jumlah" data-rule="email" data-msg="Please enter a valid email" />
+              <div class="validate"></div>
+            </div>
+
           </div>
 
           <div class="col-lg-6 menu-item filter-sweet">
@@ -111,9 +113,11 @@
           </div>
 
           <div class="col-lg-6 menu-item filter-sweet">
-            <button type="button" class="btn btn-secondary" onClick="onClick()">+</button>
-            <input type="hidden" id="quantity" name="quantity" value="1" min="1" max="100"  />
-            <button type="button" class="btn btn-secondary" onClick="onClickk()">-</button>
+            <div class="col-md-6 form-group">
+              <input type="text" class="form-control" name="cookies" id="cookies" placeholder="Jumlah" data-rule="email" data-msg="Please enter a valid email" />
+              <div class="validate"></div>
+            </div>
+
           </div>
 
           <div class="col-lg-6 menu-item filter-savory">
@@ -128,9 +132,11 @@
 
 
           <div class="col-lg-6 menu-item filter-savory">
-            <button type="button" class="btn btn-secondary" onClick="onClick()">+</button>
-            <input type="hidden" id="quantity" name="quantity" value="1" min="1" max="100"  />
-            <button type="button" class="btn btn-secondary" onClick="onClickk()">-</button>
+            <div class="col-md-6 form-group">
+              <input type="text" class="form-control" name="mie" id="mie" placeholder="Jumlah" data-rule="email" data-msg="Please enter a valid email" />
+              <div class="validate"></div>
+            </div>
+
           </div>
 
           <div class="col-lg-6 menu-item filter-sweet">
@@ -144,14 +150,11 @@
           </div>
           
           <div class="col-lg-6 menu-item filter-sweet">
-            {{-- <form action="" method="post" action="{{ route('contact.store') }}">
-              @csrf
-              <div class="form-row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Jumlah" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                  <div class="validate"></div>
-                </div>
-            </form> --}}
+            <div class="col-md-6 form-group">
+              <input type="text" class="form-control" name="cupcake" id="cupcake" placeholder="Jumlah" data-rule="email" data-msg="Please enter a valid email" />
+              <div class="validate"></div>
+            </div>
+
           </div>
 
           <div class="col-lg-6 menu-item filter-specialty">
@@ -165,14 +168,11 @@
           </div>
           
           <div class="col-lg-6 menu-item filter-specialty">
-            <form action="" method="post" action="{{ route('contact.store') }}">
-              @csrf
-              <div class="form-row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Jumlah" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                  <div class="validate"></div>
-                </div>
-            </form>
+            <div class="col-md-6 form-group">
+              <input type="text" name="mixbox" class="form-control" id="mixbox" placeholder="Jumlah" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+              <div class="validate"></div>
+            </div>
+
           </div>
 
           <div class="col-lg-6 menu-item filter-sweet filter-savory filter-specialty">
@@ -181,18 +181,56 @@
           </div>
 
           <div class="col-lg-6 menu-item filter-sweet filter-savory filter-specialty">
-            <p>Total Order: <a id="clicks">0</a></p>
           </div>
         </div>
+
+        {{-- <div class="col-lg-8 mt-5 mt-lg-0">
+          <!-- Success message -->
+          @if(Session::has('success'))
+            <div class="alert alert-success">
+                {{Session::get('success')}}
+            </div>
+          @endif
+
+          <form action="" method="post" action="{{ route('contact.store') }}">
+          @csrf
+          <div class="form-row">
+            <div class="col-md-6 form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Nama" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+              <div class="validate"></div>
+            </div>
+            <div class="col-md-6 form-group">
+              <input type="email" class="form-control" name="email" id="email" placeholder="E-mail" data-rule="email" data-msg="Please enter a valid email" />
+              <div class="validate"></div>
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" name="subject" id="subject" placeholder="Judul" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+            <div class="validate"></div>
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" name="message" rows="8" data-rule="required" data-msg="Tulis pesan untuk kami" placeholder="Pesan"></textarea>
+            <div class="validate"></div>
+          </div>
+          <input type="submit" name="send" value="Kirim" class="btn btn-dark btn-block">
+        </form>
+
+      </div> --}}
+
+    </div>
 
         <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
           <div class="col-md-12 text-center">        
             <a href=#>
-            <button type="submit order" class="btn btn-warning">PESAN</button> </a>
+              <input type="submit" name="send" value="Pesan" class="btn btn-dark btn-block">
           </div>
         </div>
       </div>
     </section>
+
+ 
+
+  </div>
 
     
   </main><!-- End #main -->

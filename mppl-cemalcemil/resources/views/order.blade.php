@@ -177,7 +177,7 @@
           <div class="col-lg-6 menu-item filter-sweet filter-savory filter-specialty">
           </div>
         </div>
-
+        
         <input type="submit" name="send" value="Pesan" class="btn btn-dark btn-block">
       </form>
 

@@ -25,7 +25,8 @@ class OrderController extends Controller
         //  ]);
 
         //   //  Store data in database
-          Order::create($request->all());
+        $request['users_id'] = Auth::user()->id;
+        Order::create($request->all());
   
           return back()->with('success', 'We have received your order and would like to thank you for your order.');
       }

@@ -74,10 +74,10 @@
         <div class="row" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="menu-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-sweet">Sweet</li>
-              <li data-filter=".filter-savory">Savory</li>
-              <li data-filter=".filter-specialty">Specialty</li>
+              <li data-filter="*" class="filter-active">Semua</li>
+              <li data-filter=".filter-sweet">Manis</li>
+              <li data-filter=".filter-savory">Asin</li>
+              <li data-filter=".filter-specialty">Spesial</li>
             </ul>
           </div>
         </div>

@@ -61,8 +61,7 @@
     <div class="container" data-aos="fade-up">
       <div class="section-title">
         <h3><br><br></h3>
-        <h2>Kontak</h2>
-        <p>Kontak kami</p>
+        <p>Review</p>
       </div>
     </div>
     <div class="container" data-aos="fade-up">
@@ -119,7 +118,7 @@
               <div class="validate"></div>
             </div>
             <div class="form-group">
-              <textarea class="form-control" name="message" rows="8" data-rule="required" data-msg="Tulis pesan untuk kami" placeholder="Pesan"></textarea>
+              <textarea class="form-control" name="message" rows="8" data-rule="required" data-msg="Tulis pesan untuk kami" placeholder="Tulis review disini..."></textarea>
               <div class="validate"></div>
             </div>
             <input type="submit" name="send" value="Kirim" class="btn btn-dark btn-block">

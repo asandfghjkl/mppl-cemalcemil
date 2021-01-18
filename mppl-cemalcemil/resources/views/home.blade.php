@@ -50,8 +50,8 @@
           <li class="active"><a href="{{ route('home')}}">Dashboard</a></li>
           <li><a href="#about">Tentang kami</a></li>
           <li><a href="#menu">Produk</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
-          <li><a href="{{ route('contact.store')}}">Kontak</a></li>
+          <li><a href="#testimonials">Testimoni</a></li>
+          <li><a href="{{ route('contact.store')}}">Isi Review</a></li>
           <li class="book-a-table text-center"><a href="{{ route('order.index')}}">Pesan Sekarang</a></li>
           <li class="dropdown">
             <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -129,10 +129,10 @@
         <div class="row" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="menu-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-sweet">Sweet</li>
-              <li data-filter=".filter-savory">Savory</li>
-              <li data-filter=".filter-specialty">Specialty</li>
+              <li data-filter="*" class="filter-active">Semua</li>
+              <li data-filter=".filter-sweet">Manis</li>
+              <li data-filter=".filter-savory">Asin</li>
+              <li data-filter=".filter-specialty">Spesial</li>
             </ul>
           </div>
         </div>
@@ -189,8 +189,8 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Testimonials</h2>
-          <p>What they're saying about us</p>
+          <h2>Testimoni</h2>
+          <p>Pendapat mereka tentang kami</p>
         </div>
 
         <div class="owl-carousel testimonials-carousel" data-aos="zoom-in" data-aos-delay="100">
